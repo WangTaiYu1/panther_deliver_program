@@ -1,0 +1,19 @@
+#distance of detecting obstacle
+obstacle_range: 6.0
+#distance of cleanning obstacle
+raytrace_range: 8.5
+#robot shape
+footprint: [[0.805, 0.84], [0.805, -0.84], [-0.805, -0.84], [-0.805, 0.84]]
+
+map_topic: /map
+map_type: costmap
+
+subscribe_to_updates: true
+observation_sources: laser_scan_sensor
+laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+global_frame: map
+robot_base_frame: base_link
+always_send_full_costmap: true
+
+#safety range
+inflation_radius: 1.0

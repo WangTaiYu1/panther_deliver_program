@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>rmit_panther_coordinator</name>
+    <version>0.0.0</version>
+    <description>The rmit-panther-coordinator package</description>
+
+    <maintainer email="stem.aiilab@rmit.edu.au">RMIT AI Innovation Lab</maintainer>
+    
+    <author email="timothy.wiley@rmit.edu.au">Timothy Wiley</author>
+
+    <!-- One license tag required, multiple allowed, one license per tag -->
+    <!-- Commonly used license strings: -->
+    <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+    <license>MIT IP - Not for public release</license>
+
+    <!-- Dependencies -->
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+    <!-- <depend>panther_msgs</depend> -->
+    <buildtool_depend>catkin</buildtool_depend>
+
+</package>

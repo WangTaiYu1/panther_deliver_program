@@ -1,0 +1,8 @@
+prefix=/home/jw/rmit-aiilab-panther/noetic_workspace/devel
+
+Name: rmit_panther_coordinator
+Description: Description of rmit_panther_coordinator
+Version: 0.0.0
+Cflags: -I/home/jw/rmit-aiilab-panther/noetic_workspace/src/rmit_panther_coordinator/include
+Libs: -L${prefix}/lib -lrmit-panther-coordinator
+Requires: roscpp std_msgs panther_msgs

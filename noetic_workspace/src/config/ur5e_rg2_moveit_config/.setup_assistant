@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: rg2_description
+    relative_path: urdf/rg2.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/rg2.srdf
+  CONFIG:
+    author_name: max
+    author_email: s3888349@student.rmit.edu.au
+    generated_timestamp: 1683809455
