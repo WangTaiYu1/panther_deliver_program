@@ -13,16 +13,6 @@
 
 
 services:
-
-  ros_master:
-    image: ros:noetic-ros-core
-    container_name: rmit_ros_master
-    network_mode: host
-    restart: always
-    environment:
-      - ROS_IP=10.15.20.2
-    command: roscore
-
   panther_deliver_ros:
     image: husarion/panther:noetic
     container_name: panther_deliever_program
