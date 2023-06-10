@@ -25,6 +25,6 @@ services:
       - ROS_IP=10.15.20.2
       - ROS_MASTER_URI=http://10.15.20.2:11311
 
-    command: roslaunch panther_deliever_program move_base.launch --wait
+    command: roslaunch panther_deliever_program all.launch --wait
 
  
