@@ -1,4 +1,5 @@
 <launch>
+
     <node pkg = 'move_base' type = 'move_base' respawn = 'false' name='move_base' output = 'screen'>
         <rosparam file = '$(find rmit_panther_coordinator/config/costmap_common_params.yaml)' command = 'load' ns = 'global_map'>
         <rosparam file = '$(find rmit_panther_coordinator/config/costmap_common_params.yaml)' command = 'load' ns = 'local_map'>

@@ -4,7 +4,7 @@
     <!-- <arg name = 'map' default = 'map.yaml' /> -->
     <include file = '$(find rmit_panther_coordinator/launch/amcl.launch)' />
     <include file = '$(find rmit_panther_coordinator/launch/move_base.launch)' />
-
+    <include file = '$(find rmit_panther_coordinator/launch/gmapping.launch)' />
     <!-- launch LIDAR -->
     <!-- <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" /> -->
 
