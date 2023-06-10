@@ -67,14 +67,14 @@ set(ur5e_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ur5e_moveit_config_SOURCE_PREFIX /home/jw/rmit-aiilab-panther/noetic_workspace/src/descriptions/UR/universal_robots/ur5e_moveit_config)
-  set(ur5e_moveit_config_DEVEL_PREFIX /home/jw/rmit-aiilab-panther/noetic_workspace/devel)
+  set(ur5e_moveit_config_SOURCE_PREFIX /home/jw/panther_deliver_program/noetic_workspace/src/descriptions/UR/universal_robots/ur5e_moveit_config)
+  set(ur5e_moveit_config_DEVEL_PREFIX /home/jw/panther_deliver_program/noetic_workspace/devel)
   set(ur5e_moveit_config_INSTALL_PREFIX "")
   set(ur5e_moveit_config_PREFIX ${ur5e_moveit_config_DEVEL_PREFIX})
 else()
   set(ur5e_moveit_config_SOURCE_PREFIX "")
   set(ur5e_moveit_config_DEVEL_PREFIX "")
-  set(ur5e_moveit_config_INSTALL_PREFIX /home/jw/rmit-aiilab-panther/noetic_workspace/install)
+  set(ur5e_moveit_config_INSTALL_PREFIX /home/jw/panther_deliver_program/noetic_workspace/install)
   set(ur5e_moveit_config_PREFIX ${ur5e_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jw/rmit-aiilab-panther/noetic_workspace/install/lib;/home/jw/rmit-aiilab-panther/noetic_workspace/devel/lib;/home/jw/aiil_workspace/noetic_workspace/devel/lib;/home/jw/husarion_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/jw/panther_deliver_program/noetic_workspace/install/lib;/home/jw/aiil_workspace/noetic_workspace/devel/lib;/home/jw/husarion_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

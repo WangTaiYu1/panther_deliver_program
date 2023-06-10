@@ -1,4 +1,4 @@
-prefix=/home/jw/rmit-aiilab-panther/noetic_workspace/install
+prefix=/home/jw/panther_deliver_program/noetic_workspace/install
 
 Name: ur10e_moveit_config
 Description: Description of ur10e_moveit_config

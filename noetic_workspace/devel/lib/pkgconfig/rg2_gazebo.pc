@@ -1,4 +1,4 @@
-prefix=/home/jw/rmit-aiilab-panther/noetic_workspace/devel
+prefix=/home/jw/panther_deliver_program/noetic_workspace/devel
 
 Name: rg2_gazebo
 Description: Description of rg2_gazebo

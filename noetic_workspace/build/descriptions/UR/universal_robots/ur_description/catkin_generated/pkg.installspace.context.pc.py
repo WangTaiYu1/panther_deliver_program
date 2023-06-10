@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "ur_description"
-PROJECT_SPACE_DIR = "/home/jw/rmit-aiilab-panther/noetic_workspace/install"
+PROJECT_SPACE_DIR = "/home/jw/panther_deliver_program/noetic_workspace/install"
 PROJECT_VERSION = "1.3.1"

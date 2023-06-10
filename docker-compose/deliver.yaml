@@ -1,0 +1,39 @@
+# This is the default docker compose file that is use to configure `docker compose`
+# Note this file IS NOT read on robot boot
+# Instead services here should use `restart: always` to be loaded on boot
+#
+# To change the docker containers launched on boot
+# 1. Modify this file
+# 2. Stop all docker containers (`docker compose stop`)
+# 3. Restart this file (`docker compose --project-name --project-name my-project -f compose.yaml up`)
+#
+# This uses the project name 'rmit_panther_compose'
+#
+# Then the files should launch on start-up
+
+
+services:
+
+  ros_master:
+    image: ros:noetic-ros-core
+    container_name: rmit_ros_master
+    network_mode: host
+    restart: always
+    environment:
+      - ROS_IP=10.15.20.2
+    command: roscore
+
+  panther_deliver_ros:
+    image: husarion/panther:noetic
+    container_name: panther_deliever_program
+    network_mode: host
+    restart: always
+    privileged: true
+    tty: true
+    environment:
+      - ROS_IP=10.15.20.2
+      - ROS_MASTER_URI=http://10.15.20.2:11311
+
+    command: roslaunch panther_deliever_program move_base.launch --wait
+
+ 
