@@ -23,61 +23,17 @@ services:
       - ROS_IP=10.15.20.2
     command: roscore
 
-  panther_ros:
+  panther_deliver_ros:
     image: husarion/panther:noetic
-    container_name: rmit_panther_ros
+    container_name: panther_deliever_program
     network_mode: host
     restart: always
     privileged: true
     tty: true
     environment:
       - ROS_IP=10.15.20.2
-      - ROS_MASTER_URI=http://10.15.20.3:11311
-
-    command: roslaunch panther_bringup bringup.launch --wait
-
-  webui-ros-joystick:
-    image: husarion/webui-ros-joystick:noetic
-    container_name: rmit_webui_ros_joystick
-    network_mode: host
-    restart: always
-    environment:
-      - ROS_IP=10.15.20.2
       - ROS_MASTER_URI=http://10.15.20.2:11311
-    command: roslaunch webui-ros-joystick panther_webui.launch e_stop:=true --wait
 
-  # RMIT based services
-  # Assumes this repo has been built with 
-  # docker build -t rmit/panther .
+    command: roslaunch panther_deliever_program move_base.launch --wait
 
-  rmit-joy2twist:
-    image: rmit/panther
-    container_name: rmit_panther_joy2twist
-    restart: always
-    tty: true
-    network_mode: host
-    ipc: host
-    devices:
-      - /dev/input/js0
-    environment:
-      - ROS_IP=10.15.20.2
-      - ROS_MASTER_URI=http://10.15.20.2:11311
-    command: >
-      roslaunch --wait
-      rmit_joy2twist gamepad_controller.launch
-
-  rmit-coordinator:
-    image: rmit/panther
-    container_name: rmit_panther_coordinator
-    restart: always
-    tty: true
-    network_mode: host
-    ipc: host
-    devices:
-      - /dev/input/js0
-    environment:
-      - ROS_IP=10.15.20.2
-      - ROS_MASTER_URI=http://10.15.20.2:11311
-    command: >
-      roslaunch --wait
-      rmit_panther_coordinator coordinator.launch
+ 
