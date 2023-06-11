@@ -54,6 +54,7 @@
   <build_export_depend>rospy</build_export_depend>
   <!-- <build_export_depend>std_msg</build_export_depend> -->
   <exec_depend>rospy</exec_depend>
+  <exec_depend>husarion_ros</exec_depend>
   <!-- <exec_depend>std_msg</exec_depend> -->
 
 

@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/deliver" TYPE FILE FILES "/home/jw/panther_deliver_program/noetic_workspace/src/deliver/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deliver" TYPE PROGRAM FILES "/home/jw/panther_deliver_program/noetic_workspace/build/deliver/catkin_generated/installspace/rotate.py")
+endif()
+

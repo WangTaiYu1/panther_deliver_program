@@ -5,7 +5,7 @@ raytrace_range: 8.5
 #robot shape
 footprint: [[0.805, 0.84], [0.805, -0.84], [-0.805, -0.84], [-0.805, 0.84]]
 
-map_topic: /map
+map_topic: map
 map_type: costmap
 
 subscribe_to_updates: true

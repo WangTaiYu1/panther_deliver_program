@@ -505,6 +505,9 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
+//The directory containing a CMake configuration file for husarion_ros.
+husarion_ros_DIR:PATH=/home/jw/husarion_ws/devel/share/husarion_ros/cmake
+
 //The directory containing a CMake configuration file for kdl_conversions.
 kdl_conversions_DIR:PATH=/opt/ros/noetic/share/kdl_conversions/cmake
 
