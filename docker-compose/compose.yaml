@@ -25,6 +25,6 @@ services:
       - ROS_IP=10.15.20.2
       - ROS_MASTER_URI=http://10.15.20.2:11311
 
-    command: roslaunch deliver all.launch --wait
+    command: roslaunch deliver gmapping.launch --wait
 
  
