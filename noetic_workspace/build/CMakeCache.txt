@@ -423,6 +423,12 @@ class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
+//Value Computed by CMake
+deliver_BINARY_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/build/deliver
+
+//Value Computed by CMake
+deliver_SOURCE_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/src/deliver
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
 
@@ -621,6 +627,9 @@ shape_msgs_DIR:PATH=/opt/ros/noetic/share/shape_msgs/cmake
 
 //The directory containing a CMake configuration file for srdfdom.
 srdfdom_DIR:PATH=/opt/ros/noetic/share/srdfdom/cmake
+
+//The directory containing a CMake configuration file for std_msg.
+std_msg_DIR:PATH=std_msg_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
@@ -904,7 +913,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

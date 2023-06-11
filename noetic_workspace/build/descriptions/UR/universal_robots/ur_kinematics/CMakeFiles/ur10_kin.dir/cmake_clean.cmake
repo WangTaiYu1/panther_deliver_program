@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/jw/rmit-aiilab-panther/noetic_workspace/devel/lib/libur10_kin.pdb"
-  "/home/jw/rmit-aiilab-panther/noetic_workspace/devel/lib/libur10_kin.so"
+  "/home/jw/panther_deliver_program/noetic_workspace/devel/lib/libur10_kin.pdb"
+  "/home/jw/panther_deliver_program/noetic_workspace/devel/lib/libur10_kin.so"
   "CMakeFiles/ur10_kin.dir/src/ur_kin.cpp.o"
 )
 

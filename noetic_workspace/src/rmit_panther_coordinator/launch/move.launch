@@ -1,6 +1,0 @@
-<launch>
-
-    <node name="gotopose" pkg="rmit_panther_coordinator" type="goToPoseA.py" output="screen">
-    </node>
-
-</launch>

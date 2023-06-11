@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest
-# Build directory: /home/jw/rmit-aiilab-panther/noetic_workspace/build/gtest
+# Build directory: /home/jw/panther_deliver_program/noetic_workspace/build/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

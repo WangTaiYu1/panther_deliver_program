@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/jw/rmit-aiilab-panther/noetic_workspace/devel/lib/libur5_moveit_plugin.pdb"
-  "/home/jw/rmit-aiilab-panther/noetic_workspace/devel/lib/libur5_moveit_plugin.so"
+  "/home/jw/panther_deliver_program/noetic_workspace/devel/lib/libur5_moveit_plugin.pdb"
+  "/home/jw/panther_deliver_program/noetic_workspace/devel/lib/libur5_moveit_plugin.so"
   "CMakeFiles/ur5_moveit_plugin.dir/src/ur_moveit_plugin.cpp.o"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jw/rmit-aiilab-panther/noetic_workspace/src/descriptions/RG2/rg2_gazebo
+# Install script for directory: /home/jw/panther_deliver_program/noetic_workspace/src/descriptions/RG2/rg2_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jw/rmit-aiilab-panther/noetic_workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jw/panther_deliver_program/noetic_workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jw/rmit-aiilab-panther/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jw/panther_deliver_program/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rg2_gazebo/cmake" TYPE FILE FILES
-    "/home/jw/rmit-aiilab-panther/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazeboConfig.cmake"
-    "/home/jw/rmit-aiilab-panther/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazeboConfig-version.cmake"
+    "/home/jw/panther_deliver_program/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazeboConfig.cmake"
+    "/home/jw/panther_deliver_program/noetic_workspace/build/descriptions/RG2/rg2_gazebo/catkin_generated/installspace/rg2_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rg2_gazebo" TYPE FILE FILES "/home/jw/rmit-aiilab-panther/noetic_workspace/src/descriptions/RG2/rg2_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rg2_gazebo" TYPE FILE FILES "/home/jw/panther_deliver_program/noetic_workspace/src/descriptions/RG2/rg2_gazebo/package.xml")
 endif()
 

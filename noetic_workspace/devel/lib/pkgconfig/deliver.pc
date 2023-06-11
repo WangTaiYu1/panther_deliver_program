@@ -1,0 +1,8 @@
+prefix=/home/jw/panther_deliver_program/noetic_workspace/devel
+
+Name: deliver
+Description: Description of deliver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

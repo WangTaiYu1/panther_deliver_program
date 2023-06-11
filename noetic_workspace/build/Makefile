@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jw/rmit-aiilab-panther/noetic_workspace/build/CMakeFiles /home/jw/rmit-aiilab-panther/noetic_workspace/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jw/panther_deliver_program/noetic_workspace/build/CMakeFiles /home/jw/panther_deliver_program/noetic_workspace/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jw/rmit-aiilab-panther/noetic_workspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jw/panther_deliver_program/noetic_workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

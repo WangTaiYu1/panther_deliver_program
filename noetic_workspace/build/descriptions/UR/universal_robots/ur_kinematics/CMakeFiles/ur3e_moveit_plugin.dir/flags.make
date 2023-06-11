@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ur_kinematics\" -DUR3e_PARAMS -Dur3e_moveit_plugin_EXPORTS
 
-CXX_INCLUDES = -I/home/jw/rmit-aiilab-panther/noetic_workspace/src/descriptions/UR/universal_robots/ur_kinematics/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet 
+CXX_INCLUDES = -I/home/jw/panther_deliver_program/noetic_workspace/src/descriptions/UR/universal_robots/ur_kinematics/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet 
 

@@ -2,7 +2,7 @@
 
     <!-- load map -->
     <!-- <arg name = 'map' default = 'map.yaml' /> -->
-    <include file = '$(find rmit_panther_coordinator/launch/gmapping.launch)' />
+    <include file = '$(find deliver/launch/gmapping.launch)' />
     <!-- <include file = '$(find rmit_panther_coordinator/launch/amcl.launch)' /> -->
 
     <!-- <include file = '$(find rmit_panther_coordinator/launch/move_base.launch)' /> -->
