@@ -56,3 +56,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deliver" TYPE PROGRAM FILES "/home/jw/panther_deliver_program/noetic_workspace/build/deliver/catkin_generated/installspace/rotate.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deliver" TYPE PROGRAM FILES "/home/jw/panther_deliver_program/noetic_workspace/build/deliver/catkin_generated/installspace/GotoPoseA.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deliver" TYPE PROGRAM FILES "/home/jw/panther_deliver_program/noetic_workspace/build/deliver/catkin_generated/installspace/GotoPoseB.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/deliver" TYPE DIRECTORY FILES "/home/jw/panther_deliver_program/noetic_workspace/src/deliver/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/deliver" TYPE DIRECTORY FILES "/home/jw/panther_deliver_program/noetic_workspace/src/deliver/config")
+endif()
+

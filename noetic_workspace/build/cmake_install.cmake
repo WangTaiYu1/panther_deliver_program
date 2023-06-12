@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jw/panther_deliver_program/noetic_workspace/build/gtest/cmake_install.cmake")
   include("/home/jw/panther_deliver_program/noetic_workspace/build/deliver/cmake_install.cmake")
+  include("/home/jw/panther_deliver_program/noetic_workspace/build/demo/cmake_install.cmake")
 
 endif()
 

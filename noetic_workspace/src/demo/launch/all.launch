@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- load map -->
+    <!-- <arg name = 'map' default = 'map.yaml' /> -->
+    <include file = "$(find demo)/launch/gmapping.launch" />
+    <include file = '$(find demo)/launch/amcl.launch' />
+
+    <include file = "$(find demo)/launch/move_base.launch" />
+    
+    
+</launch>

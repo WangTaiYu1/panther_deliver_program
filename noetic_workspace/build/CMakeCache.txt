@@ -429,6 +429,12 @@ deliver_BINARY_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/buil
 //Value Computed by CMake
 deliver_SOURCE_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/src/deliver
 
+//Value Computed by CMake
+demo_BINARY_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/build/demo
+
+//Value Computed by CMake
+demo_SOURCE_DIR:STATIC=/home/jw/panther_deliver_program/noetic_workspace/src/demo
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
 
@@ -585,6 +591,9 @@ rmit_panther_coordinator_BINARY_DIR:STATIC=/home/jw/rmit-aiilab-panther/noetic_w
 
 //Value Computed by CMake
 rmit_panther_coordinator_SOURCE_DIR:STATIC=/home/jw/rmit-aiilab-panther/noetic_workspace/src/rmit_panther_coordinator
+
+//The directory containing a CMake configuration file for rosbot_description.
+rosbot_description_DIR:PATH=/home/jw/husarion_ws/devel/share/rosbot_description/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -916,7 +925,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

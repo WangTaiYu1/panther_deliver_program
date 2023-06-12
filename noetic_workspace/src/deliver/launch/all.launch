@@ -3,7 +3,7 @@
     <!-- load map -->
     <!-- <arg name = 'map' default = 'map.yaml' /> -->
     <include file = "$(find deliver)/launch/gmapping.launch" />
-    <!-- <include file = '$(find deliver/launch/amcl.launch)' /> -->
+    <include file = '$(find deliver)/launch/amcl.launch' />
 
     <include file = "$(find deliver)/launch/move_base.launch" />
     

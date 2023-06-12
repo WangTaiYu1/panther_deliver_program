@@ -1,0 +1,6 @@
+<launch>
+
+    <include file = "$(find demo)/launch/go.launch" />
+    <include file = "$(find demo)/launch/rotate.launch" />
+
+</launch>

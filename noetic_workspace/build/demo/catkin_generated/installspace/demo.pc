@@ -1,0 +1,8 @@
+prefix=/home/jw/panther_deliver_program/noetic_workspace/install
+
+Name: demo
+Description: Description of demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

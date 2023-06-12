@@ -1,2 +1,2 @@
-deliver
+deliver:demo
 -DCATKIN_DEVEL_PREFIX=/home/jw/panther_deliver_program/noetic_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/jw/panther_deliver_program/noetic_workspace/install -G Unix Makefiles

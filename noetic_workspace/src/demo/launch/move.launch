@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="gotopose" pkg="demo" type="goToPoseA.py" output="screen">
+    </node>
+
+</launch>
