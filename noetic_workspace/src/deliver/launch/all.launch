@@ -2,6 +2,9 @@
 
     <!-- load map -->
     <!-- <arg name = 'map' default = 'map.yaml' /> -->
+
+    <!-- load urdf -->
+   
     <include file = "$(find deliver)/launch/gmapping.launch" />
     <include file = '$(find deliver)/launch/amcl.launch' />
 

@@ -16,17 +16,17 @@ def drive():
     cmd.angular.z = 0
 
     # Paramaters
-    speed = rospy.get_param("~speed", 0.5)
-    max_duration = rospy.get_param("~duration", 3)
+    speed = rospy.get_param("~speed", 0.1)
+    max_duration = rospy.get_param("~duration", 1)
     t_start = rospy.Time.now()
     stop = False
 
-    rospy.loginfo("Rotating robot at speed %lf for %lf seconds", speed, max_duration)
+    rospy.loginfo("moving robot at speed %lf for %lf seconds", speed, max_duration)
 
     # Periodically publish the drive command to ensure drive continues
     rate = rospy.Rate(10)
     while (not stop) and (not rospy.is_shutdown()):
-        cmd.angular.x = speed
+        cmd.linear.x = speed
         pub_drive.publish(cmd)
         rate.sleep()
         

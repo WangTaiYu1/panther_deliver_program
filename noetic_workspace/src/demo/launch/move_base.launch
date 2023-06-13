@@ -1,5 +1,5 @@
 <launch>
-
+    
     <node pkg = 'move_base' type = 'move_base' respawn = 'false' name='move_base' output = 'screen'>
         <rosparam file = '$(find demo)/config/costmap_common_params.yaml' command = 'load' ns = 'global_map' />
         <rosparam file = '$(find demo)/config/costmap_common_params.yaml' command = 'load' ns = 'local_map' />
@@ -7,6 +7,10 @@
         <rosparam file = '$(find demo)/config/global_costmap_params.yaml' command = 'load' ns = 'global_map' />
         <rosparam file = '$(find demo)/config/trajectory_planner.yaml' command = 'load' ns = 'global_map' />
     </node>
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_base_transform" args="0 0 0 0 0 0 map base_base 100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 1000"/>
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
 
 
 </launch>

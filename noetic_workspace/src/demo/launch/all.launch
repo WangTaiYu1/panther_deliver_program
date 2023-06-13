@@ -1,11 +1,14 @@
 <launch>
 
     <!-- load map -->
-    <!-- <arg name = 'map' default = 'map.yaml' /> -->
+    <!-- <arg name = "map" default = "lab.yaml" /> -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find demo)/config/lab.yaml" />
+<!--     
+    <param name="robot_description" command="$(find xacro)/xacro '$(find rosbot_description)/urdf/rosbot.xacro'"/> -->
     <include file = "$(find demo)/launch/gmapping.launch" />
     <include file = '$(find demo)/launch/amcl.launch' />
 
-    <include file = "$(find demo)/launch/move_base.launch" />
+    <!-- <include file = "$(find demo)/launch/move_base.launch" /> -->
     
     
 </launch>
