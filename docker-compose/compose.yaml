@@ -27,4 +27,17 @@ services:
 
     command: roslaunch demo all.launch --wait
 
+  # panther_rotate_ros:
+  #   image: panther_deliver:noetic
+  #   container_name: panther_deliever_program
+  #   network_mode: host
+  #   restart: always
+  #   privileged: true
+  #   tty: true
+  #   environment:
+  #     - ROS_IP=10.15.20.2
+  #     - ROS_MASTER_URI=http://10.15.20.2:11311
+
+  #   command: roslaunch demo rotate.launch --wait
+
  
