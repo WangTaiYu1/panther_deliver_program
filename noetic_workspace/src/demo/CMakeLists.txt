@@ -9,7 +9,6 @@ project(demo)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  rosbot_description
   rospy
 )
 
