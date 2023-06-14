@@ -25,6 +25,7 @@ SHELL ["/bin/bash", "-c"]
 
 WORKDIR /ros_ws
 COPY ./noetic_workspace/src/deliver/ ./src/deliver
+COPY ./noetic_workspace/src/demo/ ./src/demo
 
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
     catkin_make
