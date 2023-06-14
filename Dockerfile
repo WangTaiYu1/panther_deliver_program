@@ -28,7 +28,8 @@ COPY ./noetic_workspace/src/deliver/ ./src/deliver
 COPY ./noetic_workspace/src/demo/ ./src/demo
 
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
-    catkin_make
+    catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
+
 
 # This should not be required - replaced with above
 # RUN apt update && \
