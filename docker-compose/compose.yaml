@@ -15,8 +15,7 @@
 services:
 
   panther_deliver_ros:
-    platform: linux/amd64/v3
-    image: husarion/panther:noetic
+    image: panther_deliver:noetic
     container_name: panther_deliever_program
     network_mode: host
     restart: always
