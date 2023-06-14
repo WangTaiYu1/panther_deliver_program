@@ -26,7 +26,8 @@ def drive():
     # Periodically publish the drive command to ensure drive continues
     rate = rospy.Rate(10)
     while (not stop) and (not rospy.is_shutdown()):
-        cmd.angular.z = speed
+        cmd.angular.z = 1
+        cmd.linear.x = 1
         pub_drive.publish(cmd)
         rate.sleep()
         
