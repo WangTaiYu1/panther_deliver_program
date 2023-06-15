@@ -14,7 +14,7 @@ RUN apt update && \
     source /opt/ros/$ROS_DISTRO/setup.bash && \
     apt install -y vim ros-$ROS_DISTRO-joy && \
     apt install -y ros-$ROS_DISTRO-gmapping && \
-    apt install -y ros-move-base-msgs && \ 
+    apt install -y ros-noetic-navigation && \ 
     apt install -y ros-noetic-map-server
 
 ########################
