@@ -11,7 +11,9 @@
     <node pkg="tf" type="static_transform_publisher" name="fr_publisher" args="0.05 -0.11 0 0 0 0 base_link front_right_wheel 250" />
     <node pkg="tf" type="static_transform_publisher" name="rl_publisher" args="-0.05 0.11 0 0 0 0 base_link rear_left_wheel 250" />
     <node pkg="tf" type="static_transform_publisher" name="rr_publisher" args="-0.05 -0.11 0 0 0 0 base_link rear_right_wheel 250" /> -->
-    <node pkg="tf" type="static_transform_publisher" name="map_base_transform" args="0 0 0 0 0 0 map base_base 100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="map_base_transform" args="0 0 0 0 0 0 map base_base 100"/> 
+
+
     <!--  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 1000"/> -->
    
 </launch>
