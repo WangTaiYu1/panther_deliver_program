@@ -17,7 +17,8 @@ RUN apt update && \
     apt install -y ros-noetic-navigation && \ 
     apt install -y ros-noetic-map-server && \
     apt install -y ros-noetic-joint-state-publisher &&\
-    apt install -y ros-noetic-robot-state-publisher
+    apt install -y ros-noetic-robot-state-publisher && \
+    apt install -y ros-noetic-xacro
 
 ########################
 # Build software for RMIT Panther
