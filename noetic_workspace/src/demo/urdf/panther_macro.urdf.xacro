@@ -15,7 +15,7 @@
                        simulation_engine:='gazebo-classic'">
 
     <xacro:if value="${wheel_config_path == 'None'}">
-      <xacro:property name="wheel_config_file" value="$(find panther_description)/config/WH01.yaml"  />
+      <xacro:property name="wheel_config_file" value="$(find demo)/config/WH01.yaml"  />
     </xacro:if>
     <xacro:unless value="${wheel_config_path == 'None'}">
       <xacro:property name="wheel_config_file" value="$(arg wheel_config_path)"  />
@@ -26,8 +26,8 @@
 
 
     <!-- INCLUDE ROBOT PARTS DEFINITIONS -->
-    <xacro:include filename="$(find panther_description)/urdf/body.urdf.xacro" ns="body" />
-    <xacro:include filename="$(find panther_description)/urdf/wheel.urdf.xacro" ns="wheel" />
+    <xacro:include filename="$(find demo)/urdf/body.urdf.xacro" ns="body" />
+    <xacro:include filename="$(find demo)/urdf/wheel.urdf.xacro" ns="wheel" />
 
     <!-- BODY DECLARATION -->
     <xacro:body.body 
