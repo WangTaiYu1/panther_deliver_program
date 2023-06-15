@@ -15,7 +15,9 @@ RUN apt update && \
     apt install -y vim ros-$ROS_DISTRO-joy && \
     apt install -y ros-$ROS_DISTRO-gmapping && \
     apt install -y ros-noetic-navigation && \ 
-    apt install -y ros-noetic-map-server
+    apt install -y ros-noetic-map-server && \
+    apt install -y ros-noetic-joint-state-publisher &&\
+    apt install -y ros-noetic-robot-state-publisher
 
 ########################
 # Build software for RMIT Panther
