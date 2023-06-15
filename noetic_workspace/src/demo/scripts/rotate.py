@@ -16,8 +16,8 @@ def drive():
     cmd.angular.z = 0
 
     # Paramaters
-    speed = rospy.get_param("~speed", 0.5)
-    max_duration = rospy.get_param("~duration", 3)
+    speed = rospy.get_param("~speed", 0.1)
+    max_duration = rospy.get_param("~duration", 1)
     t_start = rospy.Time.now()
     stop = False
 

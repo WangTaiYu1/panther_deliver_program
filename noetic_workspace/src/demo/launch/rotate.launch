@@ -2,7 +2,7 @@
 
     <node name="rotate" pkg="demo" type="rotate.py" output="screen" >
         <param name="speed" value="0.1" />
-        <param name="duration" value="3" />
+        <param name="duration" value="1" />
     </node>
 
 </launch>
