@@ -4,7 +4,7 @@
     <arg name = "map" default = "lab.yaml" />
     <node name="map_server" pkg="map_server" type="map_server" args="$(find demo)/config/$(arg map)" />
     
-    <param name="robot_description" command="$(find xacro)/xacro '$(find demo)/urdf/panther.urdf.xacro'"/>
+    <!-- <param name="robot_description" command="$(find xacro)/xacro '$(find demo)/urdf/panther.urdf.xacro'"/> -->
     <include file = "$(find demo)/launch/gmapping.launch" />
     <include file = '$(find demo)/launch/amcl.launch' />
 
