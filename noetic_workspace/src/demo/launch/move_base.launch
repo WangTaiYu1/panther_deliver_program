@@ -7,13 +7,17 @@
         <rosparam file = '$(find demo)/config/global_costmap_params.yaml' command = 'load'/>
         <rosparam file = '$(find demo)/config/trajectory_planner.yaml' command = 'load' />
     </node>
+    <remap from="cmd_vel" to="cmd_vel"/>
+    <remap from="odom" to="odom"/>
+    <remap from="scan" to="/scan"/>
     <!-- <node pkg="tf" type="static_transform_publisher" name="fl_publisher" args="0.05 0.11 0 0 0 0 base_link front_left_wheel 250" />
     <node pkg="tf" type="static_transform_publisher" name="fr_publisher" args="0.05 -0.11 0 0 0 0 base_link front_right_wheel 250" />
     <node pkg="tf" type="static_transform_publisher" name="rl_publisher" args="-0.05 0.11 0 0 0 0 base_link rear_left_wheel 250" />
     <node pkg="tf" type="static_transform_publisher" name="rr_publisher" args="-0.05 -0.11 0 0 0 0 base_link rear_right_wheel 250" /> -->
-    <!-- <node pkg="tf" type="static_transform_publisher" name="map_base_transform" args="2 0 0 0 0 0 /map /base_link 100"/>  -->
+    <node pkg="tf" type="static_transform_publisher" name="map_base_transform" args="2 0 0 0 0 0 /map /base_link 100"/> 
 
 
     <!--  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 1000"/> -->
-   
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
 </launch>

@@ -17,8 +17,8 @@ def goToPose():
     target_pose = PoseStamped()
     target_pose.header.frame_id = map_frame
     target_pose.header.stamp = rospy.Time.now()
-    target_pose.pose.position.x = 2
-    target_pose.pose.position.y = 1
+    target_pose.pose.position.x = -1
+    target_pose.pose.position.y = 0
     target_pose.pose.position.z = 0
     target_pose.pose.orientation.x = 0
     target_pose.pose.orientation.y = 0
