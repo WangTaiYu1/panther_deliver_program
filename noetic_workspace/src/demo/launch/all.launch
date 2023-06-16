@@ -1,5 +1,5 @@
 <launch>
-    <group ns="navigation">
+    
  
     <!-- load map -->
     <arg name = "map" default = "lab.yaml" />
@@ -11,6 +11,6 @@
 
     <include file = "$(find demo)/launch/move_base.launch" />
 
-    </group>
+    
     
 </launch>
